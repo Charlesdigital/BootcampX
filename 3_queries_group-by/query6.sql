@@ -1,4 +1,4 @@
-Low Average Completion Time
+-- Low Average Completion Time
 
 -- Get the students who's average time it takes to complete an assignment is less than the average estimated time it takes to complete an assignment.
 
