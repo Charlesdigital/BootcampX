@@ -8,4 +8,15 @@
 --     Since this query needs to work with any specific teacher name, use 'Waylon Boehm' for the teacher's name here.
 
 
-SELECT
+SELECT count(assistance_requests.*) as total_assistances, teachers.name
+FROM assistance_requests
+JOIN teachers ON teachers.id = teacher_id
+WHERE name = 'Waylon Boehm'
+GROUP BY teachers.name;
+
+
+
+--  total_assistances |     name
+-- -------------------+--------------
+--               4227 | Waylon Boehm
+-- (1 row)
