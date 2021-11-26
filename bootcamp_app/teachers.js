@@ -1,4 +1,7 @@
 const { Pool } = require("pg");
+// Store all potentially malicious values in an array.
+
+// const values = [`%${cohortName}%`, limit];
 
 const pool = new Pool({
   user: "labber",

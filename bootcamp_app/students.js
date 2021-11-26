@@ -2,6 +2,8 @@ const { Pool } = require("pg");
 const cohort = process.argv[2];
 const Limit = process.argv[3];
 
+// const values = [`%${cohortName}%`, limit];
+
 const pool = new Pool({
   user: "labber",
   password: "labber",
